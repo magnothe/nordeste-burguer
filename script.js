@@ -16,4 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
+
+    // Form submission
+    const reservationForm = document.querySelector('.reservation-form');
+    reservationForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Reserva solicitada! Entraremos em contato em breve.');
+        this.reset();
+    });
 });
